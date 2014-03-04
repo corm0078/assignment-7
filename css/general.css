@@ -1,0 +1,589 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+/* CSS */
+html, body{
+	font-family: "Quicksand", Ariel, Sans serif;
+	font-size: 100%;
+	line-height: 1.4rem;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.main{
+	width: 90%;
+	margin:	auto;
+	padding-bottom: 2rem;
+	padding-top: 15%;
+}
+
+img{
+	width: 100%;
+}
+
+/*-------------------------------------------------Masthead-------------------------------------------------*/
+
+header{
+	background-color: rgb(190,30,45);
+	padding-top: 1.5rem; 
+}
+
+.hide-text{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.logo{
+	width: 40%;
+	position: relative;
+	left: 32%;
+	top: -0.5rem;	
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 40px;
+	right: 5%;
+	
+	background: rgb(190, 30, 45) url('../images/nav-icon.svg') no-repeat center center;
+	/*background-color background-image background-repeat background-position*/
+		
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+	background-color:  rgb(238,52,66);
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited{
+	display: block;
+	padding: 1rem;
+	background-color: rgb(238,52,66);
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+	background-color: rgb(190,30,45);
+}
+
+/*toggle nav styles*/
+
+.nav{
+	display: none;	
+}
+
+.nav-bottom{
+	display: block;	
+}
+
+.nav-bottom a,
+.nav-bottom a:link,
+.nav-bottom a:visited{
+	padding: 0.5rem;
+}
+
+.nav-top[data-state="expanded"]{
+	display:block;
+}
+
+.poolimage{
+	position: relative;
+}
+
+.quotation{
+	background-color: #fff;
+	opacity: 0.6;
+	text-align: center;
+	position: relative;
+	padding: 0.4rem;
+	margin-top: -9.75rem;
+	width: 90%;
+	margin-left: 5.3%;
+	font-family: "Quicksand", Ariel, Sans serif;
+	color: rgb(21,95,162);
+	font-size: 19px;
+}
+
+.arrow{
+	display: none;	
+}
+
+.pageicon{
+	display: none;
+}
+
+@media only screen and (min-width: 17em){
+	.quotation{
+		margin-top: -10.5rem;	
+	}
+}
+
+@media only screen and (min-width: 25em){
+	
+	.nav{
+		overflow: auto;
+	}
+	
+	.nav a,
+	.nav a:link,
+	.nav a:visited{
+		padding: 0.5rem;	
+	}
+	
+	.nav li{
+		float: left;
+		width: 33.33%;
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;	
+	}
+		
+	.nav-top{
+		margin-top: -0.475rem;
+		display: block;
+	}
+	
+	.logo{ 
+		width: 25%;
+		left: 35%;
+		top: -0.8rem;
+		margin: 1rem;
+	}
+	
+	.quotation{
+		margin-top: -17rem;	
+	}
+	
+	.arrow{
+		display: block;
+		width: 18%;
+		position: absolute;
+		margin-left: 40%;
+		margin-top: 1rem;		
+	}
+	
+	.main{
+		padding-top: 10rem;	
+	}
+}
+
+@media only screen and (min-width:45em){
+	
+	.quotation{
+		margin-top: -23rem;
+	}
+	
+	.main{
+		margin-top: 15%;	
+	}
+	
+	header{
+		margin-top: -4rem;
+	}
+	
+	.logo{
+		width: 18%;
+		left: 5%;
+		top: 2rem;
+		margin: 1rem;		
+	}
+
+	.nav{
+		background-color: rgb(238,52,66);
+	}
+	
+	.nav a,
+	.nav a:link,
+	.nav a:visited{
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+	
+	.nav ul{
+		float: right;	
+	}
+	
+	.pageicon{
+		display: block;
+		width: 8%;
+		position: absolute;
+		margin-left: 90%;
+		margin-top: -10%;			
+	}
+	
+	.nav li{
+		width: auto;	
+	}
+}
+
+@media only screen and (min-width:68em){
+	
+	.quotation{
+		margin-top: -40rem;
+	}
+	
+	.main{
+		padding-top: 20rem;	
+	}
+	
+}
+
+/*----------------------------------------------------------------------------------------content------------------*/
+
+h1{
+	font-size: 1.5rem;
+	color: rgb(190,30,45);
+	font-family: "Quicksand", Ariel, Sans serif;
+	font-weight: bold;
+	margin-top: 20%;	
+}
+
+.rescue{
+	width: 35%;
+	margin-left: 27%;
+	margin-top: 1rem;
+}
+
+.icons{
+	width: 30%;
+	margin-left: 35%;
+	position: relative;
+	margin-bottom: 1rem;	
+}
+
+h2{
+	font-size: 1.2rem;
+	color: rgb(190,30,45);
+	font-family: "Quicksand", Ariel, Sans serif;
+	text-align: center;
+	padding-top: 2rem;	
+}
+
+.amenities li{
+	list-style-type: disc;
+	list-style-position: inside;
+	font-size: 1rem;
+	padding-left: 10%;	
+	font-size: 0.9rem;
+	margin-left: 30%;
+}
+
+h3{
+	font-size: 1rem;
+	text-align: center;
+	margin-bottom: 0.5rem;
+	font-family: "Quicksand", Ariel, Sans serif;
+	padding-top: 2rem;
+}
+
+.right{ 
+	line-height: 0.5rem;
+	text-align: center;
+}
+
+.contact{
+	line-height: 0.5rem;
+	text-align: center;
+}
+
+
+@media only screen and (min-width: 25em){
+	.rescue{
+		float: left;	
+		margin: 0.5%;
+		width: 20%;
+		margin-top: 1rem;
+	}
+	
+}
+
+@media only screen and (min-width:31em){
+
+	h1{
+		margin-top: 8%;
+		padding-top: 4%;	
+	}
+	
+	.rescue{
+		width: 30%;
+		margin: 0;
+	}
+	
+	.col{
+		width: 65%;
+		float: right;
+	}
+	
+	.intro{
+		padding-bottom: 30%;	
+	}
+}
+
+@media only screen and (min-width:45em){
+	.icons{
+		width: 15%;
+		margin-left: 42%;
+		position: relative;
+		margin-bottom: 1rem;		
+	}
+	
+	h1{
+		margin-top: 5%;	
+	}
+	
+	.col{
+		padding-top: 4rem;	
+	}
+}
+
+/*-----------------------------------------schedule----------------------------------*/
+
+table, th, td{
+	width: 100%;
+	border-top: 2px solid #fff;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	line-height: 1.4rem;
+	padding-bottom: 0.5rem;
+}
+
+th{
+	font-size: 0.9rem;
+	background-color: rgb(154,225,237);
+	text-align: left;
+	padding-left: 1rem;
+}
+
+td{
+	font-size: 0.8rem;
+	background-color: rgb(154,225,237);
+	padding-right: 1rem;
+}
+
+.specifics{
+	text-align: left;
+}
+
+h4{
+	font-size: 0.9rem;
+}
+
+.schedule-list{
+	font-size: 0.8rem;	
+	text-align: center;
+	background-color: rgb(154,232,244);
+	padding: 0.7rem;
+	line-height: 1.5rem;
+}
+
+.schedule-list li{
+	padding-top: 0.2rem;
+	padding-bottom: 0.5rem;
+}
+
+.schedule-list dt{
+	font-size: 0.9rem;
+	padding-bottom: 0.5rem;
+}
+
+.schedule-list dd{
+	background-color: rgb(69,198,238);	
+}
+
+.items li{
+	list-style-type: disc;
+	list-style-position: inside;
+	font-size: 0.9rem;
+	padding-left: 40%;
+}
+
+.items{
+	padding-bottom: 1rem;	
+	margin-top: -1rem;
+}
+
+.schedule th{
+	width: 70%;
+	line-height: 1.4rem;
+}
+
+.schedule td{
+	text-align: right;
+	width: 30%;
+	padding-right: 4%;		
+}
+
+.schedule tr{
+	display: none;	
+}
+
+@media only screen and (min-width: 25em){
+	.schedule tr{
+		display: table-row;
+	}
+	
+	.schedule-list{
+		display: none;	
+	}
+}
+
+@media only screen and (min-width: 35em){
+	.items li{
+		padding-left: 11rem;	
+	}
+}
+
+@media only screen and (min-width: 45em){
+	th{
+		font-size: 1rem;
+	}
+
+	td{
+		font-size: 0.9rem;
+	}
+		
+	.items li{
+		font-size: 1rem;
+		margin-left: -1rem;
+	}	
+}
+
+/*-----------------------------------prices---------------------------------------*/
+
+.tablemedium{
+	width: 100%;
+	border-top: 2px solid #fff;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	line-height: 1.4rem;
+	padding-bottom: 0.5rem;
+	display: none;
+}
+
+.tablemedium th{
+	font-size: 0.9rem;
+	background-color: rgb(69,198,238);
+	text-align: left;
+	padding-left: 1rem;
+}
+
+.tablemedium td{
+	font-size: 0.8rem;
+	background-color: rgb(154,232,244);
+	padding-right: 1rem;
+}
+
+
+.price-list ol{
+	font-size: 0.8rem;	
+	text-align: center;
+	background-color: rgb(154,232,244);
+	padding: 0.7rem;
+	line-height: 1.5rem;
+}
+
+.price-list li{
+	padding-top: 0.2rem;
+	padding-bottom: 0.5rem;
+}
+
+.price-list dt{
+	font-size: 1rem;	
+}
+
+.price-list dd{
+	background-color: rgb(69,198,238);	
+}
+
+
+@media only screen and (min-width:31em){
+
+	.prices-h2{
+		margin-top: 4%;	
+	}
+	
+	.tablemedium{
+		display: table;
+	}
+	
+	.price-list{
+		display: none;	
+	}
+}
+
+@media only screen and (min-width: 35em){
+	
+	.tablemedium th{
+		font-size: 1rem;
+	}
+	
+	.tablemedium td{
+		font-size: 1rem;
+	}
+}
+
+
+
+/*----------------------------------------------------------------------------------------footer----------------------*/
+ 
+  footer{ 
+	background-color: rgb(190,30,45);
+	padding-bottom: 1px;
+ }
+ 
+ footer p{
+	color: #fff;
+	font-size: 0.5rem;
+	text-align: center;		
+}
+
+@media only screen and (min-width: 45em){
+	
+	.nav-bottom{
+		display: none;
+	}
+	
+	footer{
+		padding: 1.5rem;	
+	}
+}
+
+/*Tv screen*/ 
+@media only screen and (min-width: 100em){
+		
+	html{
+			font-size: 1.5rem;
+	}
+
+}
